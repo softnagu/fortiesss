@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+            <item>Country</item>
+            <item>India</item>
+            <item>England</item>
+            <item>Austrelia</item>
+            <item>Newzland</item>
+            <item>South Africa</item>
+            <item>West Indies</item>
+    </string-array>
+    <string-array name="state">
+        <item>State</item>
+        <item>Karataka</item>
+        <item>Andra pradesh</item>
+        <item>Tamilnadu</item>
+        <item>Bihar</item>
+        <item>Gujarat</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="city">
+        <item>City</item>
+        <item>Bangalore</item>
+        <item>Mysore</item>
+        <item>Hyderbad</item>
+        <item>Bihar</item>
+        <item>Bellary</item>
+        <item>Hospet</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="marital">
+        <item>Marital</item>
+        <item>Married</item>
+        <item>Un Married</item>
+    </string-array>
+
+    <string-array name="hospital">
+        <item>Jyostna Hospital</item>
+    </string-array>
+    <string-array name="location">
+        <item>Jyostna Hospital,Ramurthinagar,Bangalore</item>
+        <item>Jyostna Hospital,jayanagar,Bangalore</item>
+        <item>Jyostna Hospital,Rajajinagar,Bangalore</item>
+    </string-array>
+    <string-array name="simple_list_item_1">
+        <item>Jyostna Hospital, Bangalore</item>
+        <item>Jyostna Hospital, Bangalore</item>
+        <item>Jyostna Hospital, Bangalore</item>
+    </string-array>
+
+</resources>

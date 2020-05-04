@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/contentFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE6E6"
+    tools:context=".ui.BookAnAppointment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <!--            <SearchView-->
+            <!--                android:id="@+id/searchView"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:iconifiedByDefault="false"-->
+            <!--                android:queryHint="Search Here" />-->
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="675dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="-150dp"
+                app:layout_constraintBottom_toTopOf="@+id/book"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.905"
+                app:srcCompat="@drawable/hlp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_location1" />
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="373dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-50dp"
+                android:background="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/sp"
+                android:layout_width="53dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="360dp"
+                android:layout_marginTop="-50dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Specialist ------"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/book"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-40dp"
+                android:background="#FFFFFF"
+                android:text="Book A Health Check-up"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/card"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/cardiology"
+                android:padding="5dp"
+                android:text="Cardiology"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <Button
+                android:id="@+id/ent"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ent"
+                android:padding="5dp"
+                android:text="ENT"
+                app:layout_constraintEnd_toEndOf="@+id/card"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/card"
+                app:layout_constraintTop_toBottomOf="@+id/card" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ls1"
+                android:padding="5dp"
+                android:text="General And Laparoscopic Surgery"
+                app:layout_constraintEnd_toEndOf="@+id/ent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ent"
+                app:layout_constraintTop_toBottomOf="@+id/ent" />
+
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/im1"
+                android:padding="5dp"
+                android:text="Internal Medician"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/button5"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <Button
+                android:id="@+id/nepro"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/np3"
+                android:padding="5dp"
+                android:text="@string/nephrology"
+                app:layout_constraintEnd_toEndOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="@+id/button6"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+            <Button
+                android:id="@+id/paeditric"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ns"
+                android:padding="5dp"
+                android:text="paeditric"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/dentist"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/dentist"
+                android:padding="5dp"
+                android:text="Dentist"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/dermotology"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/dermoto"
+                android:padding="5dp"
+                android:text="Dermotology"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/anaeshesilogy"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/anest"
+                android:padding="5dp"
+                android:text="Anaeshtesilogy"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/gastroentrology"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/kidney"
+                android:padding="5dp"
+                android:text="Gastroentrology"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" /><Button
+            android:id="@+id/nephrlogy"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/np3"
+            android:padding="5dp"
+            android:text="Nephrology"
+            app:layout_constraintEnd_toEndOf="@+id/button4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/ophthalmology"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ortho"
+                android:padding="5dp"
+                android:text="Ophthalmology"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+            <Button
+                android:id="@+id/mentalhealth"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/mh"
+                android:padding="5dp"
+                android:text="Mental Health - Psychiartrist"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

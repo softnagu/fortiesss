@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E1E1"
+    tools:context=".Main3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="69dp"
+        android:background="?attr/colorPrimary"
+        android:drawableLeft="@drawable/ic_arrow_back"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="50dp"
+        app:title="Book An appointment"/>
+
+            <ImageView
+                android:id="@+id/bk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-45dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_white" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="360dp"
+                android:layout_marginTop="-25dp"
+                app:srcCompat="@drawable/ic_local_hospital_black_24dp" />
+            <ImageView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="-24dp"
+                app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+            <ImageView
+                android:id="@+id/find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="-24dp"
+                app:srcCompat="@drawable/ic_search_black_24dp" />
+            <!--            <SearchView-->
+<!--                android:id="@+id/searchView"-->
+<!--                android:layout_width="61dp"-->
+<!--                android:layout_height="62dp"-->
+<!--                android:layout_alignParentTop="true"-->
+
+<!--                android:layout_marginLeft="300dp"-->
+<!--                android:layout_marginTop="-43dp"-->
+<!--                android:iconifiedByDefault="false" />-->
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="675dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="-140dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/book"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.905"
+                app:srcCompat="@drawable/hlp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_location1" />
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="373dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-50dp"
+                android:background="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/sp"
+                android:layout_width="53dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="360dp"
+                android:layout_marginTop="-50dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Specialist ------"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/book"
+                app:layout_constraintHorizontal_bias="0.852"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/book"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-40dp"
+                android:background="#FFFFFF"
+                android:text="Book A Health Check-up"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/card"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/car"
+                android:padding="5dp"
+                android:text="Cardiology"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <Button
+                android:id="@+id/ent"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ear"
+                android:padding="5dp"
+                android:text="ENT / Otorhinolaryngology"
+                app:layout_constraintEnd_toEndOf="@+id/card"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/card"
+                app:layout_constraintTop_toBottomOf="@+id/card" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ls"
+                android:padding="5dp"
+                android:text="General And Laparoscopic Surgery"
+                app:layout_constraintEnd_toEndOf="@+id/ent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ent"
+                app:layout_constraintTop_toBottomOf="@+id/ent" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/gs"
+                android:padding="5dp"
+                android:text="General Surgery"
+                app:layout_constraintEnd_toEndOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/button4"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/im"
+                android:padding="5dp"
+                android:text="Internal Medician"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/button5"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <Button
+                android:id="@+id/nepro"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/np"
+                android:padding="5dp"
+                android:text="@string/nephrology"
+                app:layout_constraintEnd_toEndOf="@+id/button6"
+                app:layout_constraintStart_toStartOf="@+id/button6"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_dialog_email" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

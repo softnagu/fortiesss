@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.forties">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Jyostna Hospital"
+        android:roundIcon="@drawable/ic_launcher_background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main7Activity"  android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Conference"
+            android:label="@string/title_activity_conference"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Policy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Condition"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main6Activity"
+            android:label="@string/title_activity_main6"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- <activity -->
+        <!-- android:name=".Navigation" -->
+        <!-- android:label="@string/title_activity_navigation" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".Billing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Booking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Book_health"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main5Activity"
+            android:label="@string/title_activity_main5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main4Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main3Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".flash"
+            android:label="Jyostna Hospital"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
